@@ -58,14 +58,33 @@ header .nav a{
 
 }
 
-@media screen and (min-width:0px) and (max-width :992px){
-    .header .nav {
+@media screen and (max-width :999px){
+    .header .nav ,.auth{
       display:none;
      }     
      .menu{
         display: block;
         order:2;
      }
-
   }
+   
+@media screen and (max-width :620px){
+    .container{
+        width:calc(100% - 60px);
+    }
+  }
+    
+@media screen and (max-width :480px){
+
+    .logo{ 
+        gap:6px;
+    }
+    .logo img{
+        width:25px;
+    }
+    header .logo a{
+        font-size:12px;
+    }
+  }
+  
    

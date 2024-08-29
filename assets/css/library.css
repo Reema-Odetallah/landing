@@ -16,7 +16,7 @@ ul{
     list-style-type:none;
 }
 .container{
-    width:calc(100% - 132px);
+    width:calc(100% - 120px);
     margin:auto;
 }
 .row{
