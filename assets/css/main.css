@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap');
 @import'./library.css';
 
 body {
@@ -62,7 +63,6 @@ header .nav a {
     padding: 5.3541765213012695px 20.18113136291504px;
 
 }
-
 .Register {
     color: #FFFFFF;
     font-family: var(--subFont);
@@ -72,9 +72,49 @@ header .nav a {
     padding: 5.3541765213012695px 20.18113136291504px;
 
 }
-
+section{
+    padding: 31px 20px;
+    background-color: #fff;
+    font-family: var(--mainFont);
+}
+section .container h2{
+  text-align: center;
+  font-family: "Mada", sans-serif;
+}
+.Testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+.Testimonial{
+    width:calc((100% - 20px) / 2);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.informaition{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap: 10px;
+}
+.informaition img{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+.informaition span{
+    color:#969696;
+}
+q{
+    color:#646464;
+}
 footer {
-    padding: 40px;
+    padding: 40px 20px;
     background-color: #393E46;
     color: #FFFFFF;
     font-family: var(--mainFont);
@@ -110,6 +150,10 @@ footer .icon img {
     justify-content: space-evenly;
 }
 
+footer .nav {
+    margin-top: 20px;
+}
+
 footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -128,9 +172,10 @@ footer a {
         width: 100%;
 
     }
-    .end-width{
-        width :100%;
-    
+
+    .end-footer {
+        width: 100%;
+
     }
 
 }
@@ -151,7 +196,7 @@ footer a {
 
 
 @media screen and (max-width :710px) {
-   
+
     .logo {
         gap: 6px;
     }
@@ -174,16 +219,16 @@ footer a {
         width: 10px;
         height: 10px;
     }
-    
+
     footer .h2 {
         font-size: 15px;
     }
+
     .items {
         width: 50%;
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 10px;
     }
-    
 
 
 }
@@ -192,11 +237,15 @@ footer a {
     .container {
         width: calc(100% - 60px);
     }
+    
+.Testimonial{
+    width:100%;
 }
+}
+
 @media screen and (max-width :430px) {
     .items {
         width: 100%;
 
     }
-
 }
