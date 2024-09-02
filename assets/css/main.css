@@ -127,6 +127,97 @@ color:var(--mainColor);
     width: 100%;
 }
 /*end-section-one*/
+/*start-section-two*/
+.rowColumn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+}
+.upper-section .row{
+    align-items: flex-start;
+}
+.upper-section .start-section-what-we-give{
+    width:calc( (100% - 30px) / 5);
+}
+
+.start-section-what-we-give span{
+    font-family: var(--subFont);
+    color:var(--mainColor);
+}
+.start-section-what-we-give h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.start-section-what-we-give p{
+    color:#969696;
+    font-size: 14px;
+}
+.end-section-what-we-give{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+   
+    width: calc((100% - 10px) / 1.5);
+}
+.option{
+        width: calc((100% - 120px) / 4);
+        background-color: var(--mainColor);
+        border-radius: 10px;
+        padding: 50px 0px 50px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap:10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color:#fff;
+}
+.user{
+    color:var(--subColor);
+    padding: 10px 11px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.graduation{
+    color:var(--subColor);
+    padding: 10px 9px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+.award{
+    color:var(--subColor);
+    padding: 10px 12px;
+    background-color: #fff;
+    border-radius: 50%; 
+}
+.play-vedio{
+    color:var(--subColor);
+    padding: 10px 12px 10px 14px;
+    background-color: #fff;
+    border-radius: 50%; 
+}
+.option h3{
+    font-size: 16px;
+    font-family: var(--subFont);
+}
+.option p{
+    font-size:11px;
+    font-weight: 200;
+}
+.lower-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 25px;
+    width :100%;
+}
+.lower-section i{
+    color: var(--subColor);
+
+}
+/*end-section-two*/
 /*start-section-third*/
 .taking-course{
     background-color: var(--mainColor);
@@ -276,6 +367,17 @@ color:var(--mainColor);
     display: flex;
     flex-direction: column;
     gap:10px;
+    position:relative;
+}
+.Testimonial::after{
+    position: absolute;
+    content: "";
+    border-left: 40px solid transparent;
+    border-right: 40px solid #F4F4F4;
+    border-top: 40px solid #F4F4F4;
+    border-bottom: 40px solid transparent;
+    top: 0px;
+    right: 0px;
 }
 .informaition{
     display:flex;
@@ -360,7 +462,7 @@ footer a {
         width: 100%;
 
     }
-
+    
 }
 
 @media screen and (max-width :999px) {
@@ -377,6 +479,19 @@ footer a {
     .find{
         font-size: 40px;
     }
+    .upper-section .row{
+        flex-direction: column;
+        gap:20px;
+    }
+    .upper-section .start-section-what-we-give{
+        width:100%;
+    }
+    .end-section-what-we-give{
+ 
+        width: 100%;
+    }
+    
+
 }
 
 
@@ -408,6 +523,9 @@ footer a {
     }
     .end-section-rightCourse{
         width:100%;
+    }
+    .option{
+        width:25%;
     }
 }
 
@@ -446,7 +564,10 @@ footer a {
         margin-top: 20px;
         font-size: 10px;
     }
-    
+  .option{
+   width: calc((100% - 50px) / 2);
+  }
+   
 
 }
 
@@ -467,6 +588,11 @@ footer a {
     .items {
         width: 100%;
 
+    } 
+    .option{
+        width:100%;
     }
+   
+
 }
 /*end-media-Query*/
