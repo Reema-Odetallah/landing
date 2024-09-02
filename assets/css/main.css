@@ -5,7 +5,7 @@
 body {
     background-color: rgb(210, 207, 203);
 }
-
+/* start-header*/
 .header {
     background-color: #FFFFFF;
     padding: 20px;
@@ -72,11 +72,102 @@ header .nav a {
     padding: 5.3541765213012695px 20.18113136291504px;
 
 }
+/*end-header*/
 section{
     padding: 31px 20px;
     background-color: #fff;
     font-family: var(--mainFont);
 }
+/*start-section-four*/
+.courses .row{
+ align-items: flex-start;
+
+}
+.start-sectionCourses{
+    width: calc((100% - 20px) / 1.6);
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.course{
+    width:calc( 50% - 10px);
+}
+.course img{
+    width:100%; 
+    filter: brightness(70%);    
+}
+.course-img{
+    position: relative;
+}
+.cost-det{
+    position: absolute;
+    top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+.best{
+    background: var(--mainColor);
+    color: white;
+    padding: 5px;
+}
+.cost{
+    padding: 30px 10px;
+    color: white;
+    align-self:flex-end;
+}
+.course-type{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course-type span{
+    font-size: 12px;
+    color: var(--mainColor);
+}
+.detailse{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    color: #969696;
+   
+}
+.end-sectionCourses{
+    width: calc(100% / 3);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:10px;
+}
+.end-sectionCourses span{
+    font-family: var(--subFont);
+    font-weight: 300px;
+    color:var(--mainColor)
+}
+.end-sectionCourses h2{
+    width:50px;
+    font-size:30px;
+}
+.end-sectionCourses p{
+    color: #969696;
+}
+.end-sectionCourses a{
+    width:fit-content;
+    color: #FFFFFF;
+    font-family: var(--subFont);
+    border: 3px solid var(--mainColor);
+    background-color: var(--mainColor);
+    border-radius: 6px;
+    padding: 5.3541765213012695px 20.18113136291504px;
+
+}
+/*end-section-four*/
+/*start-section-five*/
 section .container h2{
   text-align: center;
   font-family: "Mada", sans-serif;
@@ -113,6 +204,8 @@ border-radius:50%;
 q{
     color:#646464;
 }
+/*end-section-five*/
+/*start-footer*/
 footer {
     padding: 40px 20px;
     background-color: #393E46;
@@ -165,14 +258,14 @@ footer a {
     color: #ffffff;
 }
 
-
-
+/*end-footer*/
+/*start-media-Query*/
 @media screen and (max-width :1200px) {
     .start-footer {
         width: 100%;
 
     }
-
+  
     .end-footer {
         width: 100%;
 
@@ -193,6 +286,21 @@ footer a {
     }
 }
 
+
+@media screen and (max-width :850px){
+    
+.courses .row{
+    flex-direction: column;
+    gap:20px;
+}
+    .start-sectionCourses{
+        width: 100%;
+        
+    }
+    .end-sectionCourses{
+        width: 100%;
+    }
+}
 
 
 @media screen and (max-width :710px) {
@@ -241,6 +349,9 @@ footer a {
 .Testimonial{
     width:100%;
 }
+.course{
+    width: 100%;
+}
 }
 
 @media screen and (max-width :430px) {
@@ -249,3 +360,4 @@ footer a {
 
     }
 }
+/*end-media-Query*/
