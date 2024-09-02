@@ -78,6 +78,96 @@ section{
     background-color: #fff;
     font-family: var(--mainFont);
 }
+/*start-section-one*/
+.right-course .row{
+    align-items: flex-start;
+}
+.start-section-rightCourse{
+    width: calc((100% - 30px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+.start-section-rightCourse .main{
+color:var(--mainColor);
+}
+.main span{
+    font-weight: 600;
+}
+.find{
+    font-size:50px;
+    font-weight: 900;
+}
+.find span{
+    color:var(--mainColor)
+}
+.random{
+   color:#969696;
+}
+.register-palyVideo{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap:20px;
+}
+.play{
+    background-color: var(--subColor);
+    padding: 4px 6px 4px 8px;
+    border-radius: 50%;
+}
+.end-section-rightCourse{
+    width: calc((100% - 30px) / 2);
+     
+}
+.right-course .image{
+    text-align: center;
+}
+.right-course img{
+    width: 100%;
+}
+/*end-section-one*/
+/*start-section-third*/
+.taking-course{
+    background-color: var(--mainColor);
+}
+.taking-course .image{
+    width:calc( ( 100% - 30px ) / 2);
+    text-align: center;
+}
+.taking-course img{
+    width:100%;
+  
+}
+.selected-course{
+    width:calc( ( 100% - 30px ) / 2);
+   display:flex;
+   flex-wrap:wrap;
+   flex-direction: column;
+   gap:20px;
+   color:#fff;
+}
+.selected-course a
+,.num{
+    color:var(--subColor);
+}
+.number
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: var(--subFont);
+}
+.number-of-thing{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*end-section-third*/
+
 /*start-section-four*/
 .courses .row{
  align-items: flex-start;
@@ -168,7 +258,7 @@ section{
 }
 /*end-section-four*/
 /*start-section-five*/
-section .container h2{
+.Testimonials .container h2{
   text-align: center;
   font-family: "Mada", sans-serif;
 }
@@ -284,6 +374,9 @@ footer a {
         display: block;
         order: 2;
     }
+    .find{
+        font-size: 40px;
+    }
 }
 
 
@@ -299,6 +392,22 @@ footer a {
     }
     .end-sectionCourses{
         width: 100%;
+    }
+    .taking-course .image{
+     width:100%;
+    }
+    .selected-course{
+        width:100%;
+    }
+    .right-course .row{
+        flex-direction: column;
+        gap:20px;
+    }
+    .start-section-rightCourse{
+        width:100%;
+    }
+    .end-section-rightCourse{
+        width:100%;
     }
 }
 
@@ -337,7 +446,7 @@ footer a {
         margin-top: 20px;
         font-size: 10px;
     }
-
+    
 
 }
 
