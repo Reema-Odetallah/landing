@@ -9,7 +9,6 @@ body {
 .header {
     background-color: #FFFFFF;
     padding: 20px;
-
 }
 
 
@@ -24,14 +23,20 @@ header .logo {
 .logo img {
     width: 40px;
 }
-
-header .select {
+.select{
     font-weight: 900;
 }
 
 .logo a {
     font-family: "Roboto", sans-serif;
 }
+.login:hover{
+    font-weight: 900;
+}
+.Register:hover{
+    font-weight: 900;
+}
+
 
 header .nav ul {
     display: flex;
@@ -39,6 +44,11 @@ header .nav ul {
     gap: 16.47px;
     font-family: var(--mainFont);
 
+}
+header .nav ul li:hover{
+    font-weight: 600;
+   
+    
 }
 
 header .menu {
